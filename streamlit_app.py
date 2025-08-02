@@ -36,7 +36,7 @@ def get_retriever():
     
     try:
         # 定义 Embeddings
-        api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY") or "sk-bRG1dii8p3tpurPNhDXmyq1SIwd1DP4L2JwCkYyk5ltNqkVt"
+        api_key ="sk-bRG1dii8p3tpurPNhDXmyq1SIwd1DP4L2JwCkYyk5ltNqkVt"
         embedding = OpenAIEmbeddings(openai_api_key=api_key)
         
         # 向量数据库持久化路径
