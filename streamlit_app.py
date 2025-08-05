@@ -40,7 +40,7 @@ def get_retriever():
         embedding = OpenAIEmbeddings(openai_api_key=api_key)
         
         # 向量数据库持久化路径
-        persist_directory = 'data_base/vector_db/chroma'
+        persist_directory = '/workspaces/test_codespace/llm-universe/data_base/vector_db/chroma'
         
         # 检查目录是否存在
         if not os.path.exists(persist_directory):
